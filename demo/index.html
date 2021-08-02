@@ -2,21 +2,117 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>particles.js</title>
+  <title>Harriet Tubman Bicentennial</title>
   <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
   <meta name="author" content="Vincent Garreau" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link rel="stylesheet" media="screen" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,600" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
 </head>
-<body>
 
-<!-- count particles -->
-<div class="count-particles">
-  <span class="js-count-particles">--</span> particles
+
+<body>
+<div class="topnav">
+  <ul style="background-color:white;">
+
+    <div id="navbar"> 
+      <a class="active" href="#home">Introduction</a>
+      <a name="#poem" href="#poem">Poem</a>
+      <a name="#timeline" href="#timeline">Timeline</a>
+      <a href="#syllabus">Harriet Tubman Syllabus</a>
+    <div>
+  </ul>
 </div>
 
 <!-- particles.js container -->
-<div id="particles-js"></div>
+<div id="particles-js" style="background-color: #010057; height:500px;">
+  <h2>Star Rating</h2>
+  <h2 id="title" style="color: white; text-align:center; font-size:50px; height: 100px; background-color: #010057;  ">The Ms. Harriet Tubman Bicentennial</h2>
+  <h3 id="description" style="color: white; text-align:center; font-size: 25px;">Harriet Tubman relied on the Underground Railroad by day and the North Star by night when she escaped from slavery in 1849. </br>
+Find the North Star in the constellation map to learn about our interactive feature. Use the compass to help.</h3>
+</div>
+
+<div id="compass" style="position: absolute; right:100px; top:300px;">
+  <div id="pointer"></div>
+</div>
+
+<!-- <div id="star-five" style="top:-223px; right:-49px;"></div> -->
+<div class="hide">north star</div>
+<div id="section" style="height:500px; background-color:white">
+  <h2 id="poem" style="color: black; font-size:20px; text-align:center;">
+  Harriet Tubman </br>
+  <em> by Eloise Greenfield</em></br>
+  Harriet Tubman didn't take no stuff</br>
+  Wasn't scared of nothing neither</br>
+  Didn't come in this world to be no slave</br>
+  And wasn't going to stay one either</br>
+  Farewell! she sang to her friends one night</br>
+  She was mighty sad to leave 'em</br>
+  But she ran away that dark, hot night</br>
+  Ran looking for her freedom</br>
+  She ran to the woods and she ran through the woods</br>
+  With the slave catcher right behind her</br>
+  And she kept on going till she got to the North</br>
+  Where those mean men couldn't find her</br>
+  She ran for her freedom nineteen times</br>
+  To save black sisters and brothers</br>
+  Harriet Tubman didn't take no stuff</br>
+  Wasn't scared of nothing neither</br>
+  Didn't come in this world to be no slave</br>
+  And didn't stay one either</br>
+    <img src="img/harriet-tubman.png" alt="harriet-tubman" style="height:500px; margin-left: -1000px; margin-top:-500px;"  >
+    <img src="img/tree.png" alt="tree" style="height:500px; right: 54px; opacity: 0.4; position: absolute;margin-left: -1000px; margin-top:-500px;"  >
+  </h2>
+</div>
+
+<div class="timeline" id="timeline" style="height:700px; background-color:black">
+  <div class="container left">
+    <div class="content">
+      <h2>1819 Birth</h2>
+      <p>Harriet Tubman was born into slavery in 1819 or 1820, in Dorchester County, Maryland. </p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>1844 Marriage</h2>
+      <p>In 1844 at the age of 25, she married John Tubman, a free African American who did not share her dream. Since she was a slave, she knew there could be a chance that she could be sold and her marriage would be split apart. Harriet dreamed of traveling north. </p>
+    </div>
+  </div>
+  <div class="container left">
+      <div class="content">
+        <h2>1849 Escape</h2>
+        <p>Harriet was given a piece of paper by a white abolitionist neighbor with two names, and told how to find the first house on her path to freedom. At the first house she was put into a wagon, covered with a sack, and driven to her next destination. </p>
+      </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>1850 Conductor</h2>
+      <p>In September of the same year, Harriet was made an official "conductor" of the UGRR. </p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>1851 Canada</h2>
+      <p>Harriet's third trip was in September 1851. She went to get her husband, John, but he had remarried and did not want to leave. So she went back up North. </p>
+    </div>
+  </div>
+    <div class="container right">
+      <div class="content">
+        <h2>1913 Death</h2>
+        <p>Before she died on March 10, 1913, she gave her home for the elderly to the Methodist Episcopal Zion Church. Tubman was buried with military rites in Fort Hill Cemetery, a short drive from the home. </p>
+      </div>
+  </div>
+</div>
+
+<div class="syllabus" id="syllabus" style="height:500px; background-color:#E8E8E8">
+    <h2 id="title" style="color: black; text-align:center; font-size:50px; height: 100px; background-color: #E8E8E8;  ">What Do We Owe Harriet Tubman?</h2>
+    <h3 id="title" style="color: black; text-align:center; font-size:50px; height: 100px; background-color: #E8E8E8;  "><a href=""><u>Download Syllabus Below</u></a></h3>
+    <h3 id="title" style="color: black; text-align:center; font-size:50px; height: 100px; background-color: #E8E8E8;  "><a href="https://www.ons.gov.uk/visualisations/dvc376/index.html"><u>Calculate Women Unpaid Labor</u> </a></h3>
+</div>
 
 <!-- scripts -->
 <script src="../particles.js"></script>
@@ -43,6 +139,132 @@
   };
   requestAnimationFrame(update);
 </script>
+
+<script>
+  /* JS will not correctly work when switching between desktop and mobile unless in debug mode */
+$(function(){
+  
+  var timeline = $('#timeline').find('.line');
+  var timelineDot = $(timeline).find('.dot');
+  var numDots = $(timeline).find('.year.dot').length * 4 + 1;
+  var mobileYear = $(timeline).find('.year.dot');
+  var mobileDefault = $(timeline).find('.dot.js-mobile-default');
+  
+  $(mobileDefault).addClass('active');
+  
+  // CONTENT SWITCH
+  $(timelineDot).each(function(){
+    $(this).click(function(){
+      var currentDesc = $('#description').find('.section-wrapper > div');
+      $(currentDesc).hide();
+      
+      matchContent($(this)).fadeIn();
+    });
+  });
+
+  var resizeTimer;
+  var initialSize = $(window).width();
+  
+  $(window).resize(function(){
+    
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function(){
+      var delayedSize = $(window).width();
+      // if we resize but not enough to change layout, proceed as usual
+      if ((initialSize > 480 && delayedSize > 480) || (initialSize < 481 && delayedSize < 481)) {
+        if (initialSize > 480 && delayedSize > 480) {
+          desktopTimeline();
+        } else if (initialSize < 481 && delayedSize < 481) {
+          mobileTimeline();
+        }
+      }
+          
+      // if we resize the page and switch between desktop and mobile layouts, reload the page
+      else {
+        location.reload();
+      }
+      
+      initialSize = delayedSize;
+    }, 250);
+    
+  });
+  
+  // DESKTOP FUNCTIONALITY
+  function desktopTimeline(){
+    $(timelineDot).each(function(){
+
+      // highlight the appropriate portion of the line as you click the dots
+      var ind = Number(findIndex($(this)));
+      var x = round((0.9 / numDots) * ind * 100, 4);
+      var y = round(((0.9 / numDots) * 100 / 2), 4);
+      var z = x + y;
+
+      $(this).click(function(){
+        $(timelineDot).removeClass('active complete');
+        $(this).addClass('active');
+        $(this).prevAll('.dot').addClass('complete');
+        $(timeline).css({
+          background: 'linear-gradient(to right, ' +
+          '#C0392B ' + z + '%, ' +
+          '#FBFCFC ' + z + '%)'
+        });
+      });
+    });
+  }
+  
+  // MOBILE FUNCTIONALITY
+  function mobileTimeline() {
+    $(timelineDot).click(function(){
+      var mobileQuarter = $(this).nextUntil('.year.dot');
+
+      if ($(this).hasClass('year')) {
+
+        $(timelineDot).not($(this)).removeClass('active complete');
+        $(this).addClass('complete');
+        $(this).next().addClass('active');
+        $(this).prevAll('.dot.year').addClass('complete');
+        $('.dot.quarter').not(mobileQuarter).slideUp(500);
+        $(mobileQuarter).slideDown(500);
+
+      } else if ($(this).hasClass('quarter')) {
+
+        var parentYear = $(this).prevUntil('.dot.year');
+
+        $(this).addClass('active');
+        $(timelineDot).not($(this)).removeClass('active');
+        $(mobileQuarter).add(mobileYear).removeClass('complete');
+        $(parentYear).add($(this)).add($(this).prevAll('.dot.year')).addClass('complete');
+      }
+    });
+  }
+  
+  // RETRIEVE ELEMENT'S INDEX AMONG VISIBLE DOTS
+  function findIndex(dataInd) {
+    return $(dataInd).attr('data-index');
+  }
+  // FIND MATCHING CONTENT
+  function matchContent(matchedContent){
+    return $('#description').find('.section-wrapper > div[data-index="' + $(matchedContent).attr("data-index") + '"]');
+  }
+  
+  // ROUND DECIMALS
+  function round(value, decimals) {
+    return Number(Math.round(value+'e'+decimals)+'e-'+decimals);
+  }
+
+
+  $(window).resize();
+});
+</script>
+
+<div class="footer">
+  <p><b>Copyright &copy; 2021 Troy Web Consulting</b></p>
+  <p></p></br>
+  <p><b>(518) 326-3798 | sales@troyweb.com</b></p>
+
+<p><b>Sales Office: 200 Broadway Troy NY 12180</b></p>
+<p><b>Development Center: 333 Broadway Troy, New York 12180</b></p>
+</div>
 
 </body>
 </html>
